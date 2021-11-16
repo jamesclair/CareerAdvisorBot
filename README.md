@@ -11,7 +11,7 @@ The following five initial career paths are supported:
 2. Frontend Engineer
 3. Backend Engineer
 4. Network Engineer
-5. Data Scientist
+5. Machine Learning Engineer
 
 ## C. Provide the generated chatbot code files to support the five identified job types from part B.
 
