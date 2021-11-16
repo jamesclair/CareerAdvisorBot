@@ -6,6 +6,13 @@ The c951careeradvisorbot is an AIML chatbot designed to help computer science st
 
 ## B. Identify five computing job types that your chatbot can recommend based on student interaction with the chatbot.
 
+The following five initial career paths are supported:
+1. Platform Engineer
+2. Frontend Engineer
+3. Backend Engineer
+4. Network Engineer
+5. Data Scientist
+
 ## C. Provide the generated chatbot code files to support the five identified job types from part B.
 
 The files in this repository are published through pandorabot's native Github integration and represent all of the AIML files necessary to run the c951careeradvisorbot on the pandorabot platform. 
