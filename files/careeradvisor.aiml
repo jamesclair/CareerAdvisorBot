@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>*</pattern>
+	    <template>Hello student!  I am the C951 career advisor bot.
+	    I am here to help you identify and choose an career in the
+	    Computer Science field.  To begin the survey, please type "start".
+	    </template>
+    </category>
+    <category>
+        <pattern>START</pattern>
+        <template>
+            <think><set name="topic">survey</set></think>
+            <srai>QUESTION ONE</srai>
+        </template>
+    </category>
+    <topic name="survey">
+        <category>
+            
+
+            <pattern>QUESTION ONE</pattern>
+            <template>Which of the following options resignates with you more?
+                <button>
+                    <text><map name="q1">network</map></text>
+                    <postback>a1network</postback>
+                </button>
+                <button>
+                    <text><map name="q1">ml</map></text>
+                    <postback>a1ML</postback>
+                </button>
+                <button>
+                    <text><map name="q1">frontend</map></text>
+                    <postback>a1frontend</postback>
+                </button>
+                <button>
+                    <text><map name="q1">backend</map></text>
+                    <postback>a1backend</postback>
+                </button>
+                <button>
+                    <text><map name="q1">platform</map></text>
+                    <postback>a1platform</postback>
+                </button>
+            </template>
+        </category>
+        <category>
+            <pattern>a1network</pattern>
+            <template>
+                <think>
+                    <set name="a1">network</set>
+                    <set name="tiebreaker1"><map name="q1">network</map>  
+                    <map name="q2">network</map></set>
+                </think>
+                <srai>QUESTION TWO</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>a1ML</pattern>
+            <template>
+                <think>
+                    <set name="a1">ml</set>
+                    <set name="tiebreaker1"><map name="q1">ml</map>  
+                    <map name="q2">ml</map></set>
+                </think>
+                <srai>QUESTION TWO</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>a1frontend</pattern>
+            <template>
+                <think>
+                    <set name="a1">frontend</set>
+                    <set name="tiebreaker1"><map name="q1">frontend</map>  
+                    <map name="q2">frontend</map></set>
+                </think>
+                <srai>QUESTION TWO</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>a1backend</pattern>
+            <template>
+                <think>
+                    <set name="a1">backend</set>
+                    <set name="tiebreaker1"><map name="q1">backend</map>  
+                    <map name="q2">backend</map></set>
+                </think>
+                <srai>QUESTION TWO</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>a1platform</pattern>
+            <template>
+                <think>
+                    <set name="a1">backend</set>
+                    <set name="tiebreaker1"><map name="q1">backend</map>  
+                    <map name="q2">backend</map></set>
+                </think>
+                <srai>QUESTION TWO</srai>
+            </template>
+        </category>
+        
+        
+        
+        <category>
+           <pattern>QUESTION TWO</pattern>
+            <template>What type of technologies are you most interested in?
+                <button>
+                    <text><map name="q2">network</map></text>
+                    <postback>a2network</postback>
+                </button>
+                <button>
+                    <text><map name="q2">ml</map></text>
+                    <postback>a2ml</postback>
+                </button>
+                <button>
+                    <text><map name="q2">frontend</map></text>
+                    <postback>a2frontend</postback>
+                </button>
+                <button>
+                    <text><map name="q2">backend</map></text>
+                    <postback>a2backend</postback>
+                </button>
+                <button>
+                    <text><map name="q2">platform</map></text>
+                    <postback>a2platform</postback>
+                </button>
+            </template>
+        </category>
+        <category>
+            <pattern>a2network</pattern>
+            <template>
+                <condition name="a1">
+                    <li value="network">
+                        <map name="result">network</map>
+                        <srai>EXIT</srai>
+                    </li>
+                    <li>
+                        After comparing your preferences, it seems you need a
+                        tie breaker.
+                        <think>
+                            <set name="a2">network</set>
+                            <set name="tiebreaker2"><map name="q1">network</map>  
+                            <map name="q2">network</map></set>
+                        </think>
+                        <srai>QUESTION THREE</srai>
+                    </li>
+                </condition>
+            </template>
+        </category>
+        <category>
+            <pattern>a2ml</pattern>
+            <template>
+                <condition name="a1">
+                    <li value="ml">
+                        <map name="result">ml</map>
+                        <srai>EXIT</srai>
+                    </li>
+                    <li>
+                        After comparing your preferences, it seems you need a
+                        tie breaker.
+                        <think>
+                            <set name="a2">ml</set>
+                            <set name="tiebreaker2"><map name="q1">ml</map>  
+                            <map name="q2">ml</map></set>
+                        </think>
+                        <srai>QUESTION THREE</srai>
+                    </li>
+                </condition>
+            </template>
+        </category>
+        <category>
+            <pattern>a2frontend</pattern>
+            <template>
+                <condition name="a1">
+                    <li value="frontend">
+                        <map name="result">frontend</map>
+                        <srai>EXIT</srai>
+                    </li>
+                    <li>
+                        After comparing your preferences, it seems you need a
+                        tie breaker.
+                        <think>
+                            <set name="a2">frontend</set>
+                            <set name="tiebreaker2"><map name="q1">frontend</map>  
+                            <map name="q2">frontend</map></set>
+                        </think>
+                        <srai>QUESTION THREE</srai>
+                    </li>
+                </condition>
+            </template>
+        </category>
+        <category>
+            <pattern>a2backend</pattern>
+            <template>
+                <condition name="a1">
+                    <li value="backend">
+                        <map name="result">backend</map>
+                        <srai>EXIT</srai>
+                    </li>
+                    <li>
+                        After comparing your preferences, it seems you need a
+                        tie breaker.
+                        <think>
+                            <set name="a2">backend</set>
+                            <set name="tiebreaker2"><map name="q1">backend</map>  
+                            <map name="q2">backend</map></set>
+                        </think>
+                        <srai>QUESTION THREE</srai>
+                    </li>
+                </condition>
+            </template>
+        </category>
+        <category>
+            <pattern>a2platform</pattern>
+            <template>
+                <condition name="a1">
+                    <li value="platform">
+                        <map name="result">platform</map>
+                        <srai>EXIT</srai>
+                    </li>
+                    <li>
+                        After comparing your preferences, it seems you need a
+                        tie breaker.
+                        <think>
+                            <set name="a2">platform</set>
+                            <set name="tiebreaker2"><map name="q1">platform</map>  
+                            <map name="q2">platform</map></set>
+                        </think>
+                        <srai>QUESTION THREE</srai>
+                    </li>
+                </condition>
+            </template>
+        </category>
+        
+        
+        <category>
+            <pattern>QUESTION THREE</pattern>
+            <template>
+                Which of the two options sounds like the best fit for you?
+                <button>
+                    <text><get name="tiebreaker1"/></text>
+                    <postback>BREAKER 1</postback>
+                </button>
+                <button>
+                    <text><get name="tiebreaker2"/></text>
+                    <postback>BREAKER 2</postback>
+                </button>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>BREAKER 1</pattern>
+            <template>
+                <condition name="a1">
+                    <li value="network">
+                        <map name="result">network</map>
+                    </li>
+                    <li value="ml">
+                        <map name="result">ml</map>
+                    </li>
+                    <li value="frontend">
+                        <map name="result">frontend</map>
+                    </li>
+                    <li value="backend">
+                        <map name="result">backend</map>
+                    </li>          
+                    <li value="platform">
+                        <map name="result">platform</map>
+                    </li>                    
+                </condition>
+                <srai>EXIT</srai>
+            </template>
+        </category>
+        <category>
+            <pattern>BREAKER 2</pattern>
+            <template>
+                <condition name="a2">
+                    <li value="network">
+                        <map name="result">network</map>
+                    </li>
+                    <li value="ml">
+                        <map name="result">ml</map>
+                    </li>
+                    <li value="frontend">
+                        <map name="result">frontend</map>
+                    </li>
+                    <li value="backend">
+                        <map name="result">backend</map>
+                    </li>          
+                    <li value="platform">
+                        <map name="result">platform</map>
+                    </li>                    
+                </condition>
+                <srai>EXIT</srai>                
+            </template>
+        </category>
+        
+
+        <category>
+    	    <pattern>*</pattern>
+    	    <template>I'm sorry I didn't understand the last command.
+    	    If you would like to exit or restart the survey, 
+    	    please type "exit".</template>
+        </category>
+        <category>
+            <pattern>EXIT</pattern>
+            <template>  Thank you for your participation!  I hope you found my 
+            career advice helpful and wish you a long and fruitful career in 
+            computer science!</template>
+        </category>
+    </topic>
+</aiml>
