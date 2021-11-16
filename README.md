@@ -1,34 +1,25 @@
 # c951careeradvisorbot
 
-## Description: 
-*(A. Explain the functionalities of the chatbot and how they will meet the needs described in the scenario.)*
+## A. Explain the functionalities of the chatbot and how they will meet the needs described in the scenario.
 
 The c951careeradvisorbot is an AIML chatbot designed to help computer science students identify and recommend a job type or career specialization based on a short survey.  The bot will interact with the student asking him/her questions that will help the student evaluate their strengths and preferences.  Once all questions have been answered the bot will evaluate the student's strengths and preferences and provide a personalized job type recommendation.
 
-## Supported Job Types: 
-*(B. Identify five computing job types that your chatbot can recommend based on student interaction with the chatbot.)*
+## B. Identify five computing job types that your chatbot can recommend based on student interaction with the chatbot.
 
-## This Repository
-*(C. Provide the generated chatbot code files to support the five identified job types from part B.)*
+## C. Provide the generated chatbot code files to support the five identified job types from part B.
 
 The files in this repository are published through pandorabot's native Github integration and represent all of the AIML files necessary to run the c951careeradvisorbot on the pandorabot platform. 
 
-## How it works:
-*(D. Explain how the chatbot training cases were selected and how you used artificial intelligence markup language (AIML) to enhance the functionality of the chatbot. Provide examples of the chatbot’s functionality that represent the selected cases at the end of the training process in support of your explanation.)*
+## D. Explain how the chatbot training cases were selected and how you used artificial intelligence markup language (AIML) to enhance the functionality of the chatbot. Provide examples of the chatbot’s functionality that represent the selected cases at the end of the training process in support of your explanation.
 
 
-## Installation Manual
-*(E. Create an installation manual for the chatbot that includes the web link to access the live chatbot in the Pandorabot platform.)*
+## E. Create an installation manual for the chatbot that includes the web link to access the live chatbot in the Pandorabot platform.
 
 
-## Pandorabot Development Tradeoffs
-*(F. Assess the strengths and weaknesses of the chatbot development environment and explain how they supported or impeded the construction of the chatbot.)*
+## F. Assess the strengths and weaknesses of the chatbot development environment and explain how they supported or impeded the construction of the chatbot.
 
-## Maintenance
-*(G. Explain how the chatbot will be monitored and maintained to improve the final user experience.)*
+## G. Explain how the chatbot will be monitored and maintained to improve the final user experience.
 
-## Tutorial
-*(H. Provide a Panopto video recording that includes a verbal summary of the capabilities of your chatbot and an example of human interaction with the chatbot in which it provides meaningful career advice.)*
+## H. Provide a Panopto video recording that includes a verbal summary of the capabilities of your chatbot and an example of human interaction with the chatbot in which it provides meaningful career advice.
 
-## Sources
-*(I. Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.)*
+## I. Acknowledge sources, using in-text citations and references, for content that is quoted, paraphrased, or summarized.
