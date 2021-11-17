@@ -2,7 +2,7 @@
 
 ## A. Explain the functionalities of the chatbot and how they will meet the needs described in the scenario.
 
-The c951careeradvisorbot is an AIML chatbot designed to help computer science students identify and recommend a job type or career specialization based on a short survey.  The bot will interact with the student asking him/her questions that will help the student evaluate their strengths and preferences.  Once all questions have been answered the bot will evaluate the student's strengths and preferences and provide a personalized job type recommendation.
+The c951careeradvisorbot is an AIML chatbot designed to help computer science students identify and recommend a job type or career specialization based on a short survey.  The bot will interact with the student asking him/her questions.  Once all questions have been answered the bot will evaluate the student's strengths and preferences and provide a personalized job type recommendation.
 
 ## B. Identify five computing job types that your chatbot can recommend based on student interaction with the chatbot.
 
